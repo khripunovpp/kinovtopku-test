@@ -1,14 +1,14 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
-import {FETCH_ERROR, FETCH_FILMS, FETCH_SUCCESS} from "./constants";
+import {FETCH_FILMS, FETCH_SUCCESS} from "./constants";
 import {IFilm, TFilmsActions} from "../../types/types";
-import API from "../../components/API";
+import FILMSAPI from "./../../API";
 
 const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[]>, {}, {}, TFilmsActions> => {
     return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[]> => {
         dispatch({
             type: FETCH_FILMS
         })
-        return await API.getFilms(`discover/${type}`, {
+        return await FILMSAPI.getFilms(`discover/${type}`, {
             [type === 'tv' ? 'first_air_date_year' : 'year']: year
         }).then<any>((response: any) => {
             if (response.status === 200) {

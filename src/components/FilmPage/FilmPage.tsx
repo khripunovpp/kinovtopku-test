@@ -1,23 +1,39 @@
-import React from "react";
-import {useSelector} from "react-redux";
-import {RootState} from "../../store/store";
+import React, {useEffect, useState} from "react";
+import {useDispatch} from "react-redux";
+import {ReduxDispatch} from "../../store/store";
+import fetchMovie from "../../store/actions/fetchMovie";
+import Spinner from "../Spinner/Spinner";
 import {IFilm} from "../../types/types";
 
 interface props {
-    ID: string
-    TYPE: string
+    id: string
+    type: string
 }
 
-const FilmPage = ({ID, TYPE}: props) => {
+const FilmPage = ({id, type}: props) => {
 
-    const data = useSelector((state: RootState)=>{
-        const result = state.filmsState.films.filter(film => film.id == Number(ID))
-        return result.length>0 && result[0]
-    })
+    const [loading, setLoading] = useState(true);
+    const [film, setFilm] = useState<IFilm | null>(null);
+
+    const dispatch = useDispatch<ReduxDispatch>();
+
+    useEffect(() => {
+        dispatch(fetchMovie(Number(id), type)).then(film => {
+            setFilm(film);
+            setLoading(false);
+        })
+    }, [])
 
     return (
         <div className="filmPage">
-            <h1 className="filmPage__title">{name}</h1>
+            <div className="container">
+                {loading && <Spinner/>}
+                {film && <>
+                    <h1 className="filmPage__title">{film.name} <span>{film.year}</span></h1>
+                    <img src={film.poster} alt={film.name}/>
+                    {film.description && <p>{film.description}</p>}
+                </>}
+            </div>
         </div>
     )
 }

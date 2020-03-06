@@ -5,7 +5,7 @@ import load = Simulate.load;
 export interface IFilm {
     id: number
     name: string
-    year: string
+    year: string | number
     poster: string
     description: string
     type: string
