@@ -16,10 +16,10 @@ const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[]>, {
             } else throw new Error('error')
         }).then((data: any) => {
             const results: IFilm[] = data.results.filter((_: any, i: number) => i < 10).map((film: any) => {
-                console.log(film)
                 const releaseYear = film['release_date'] || film['first_air_date'];
                 return {
                     id: film.id,
+                    type,
                     name: film.title || film.name,
                     description: film.overview,
                     year: new Date(releaseYear).getFullYear() || '????',

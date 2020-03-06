@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/API.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Films/Films.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/configs/movieDbConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583422235524</updated>
-      <workItem from="1583422241682" duration="27026000" />
+      <workItem from="1583422241682" duration="28504000" />
     </task>
     <servers />
   </component>

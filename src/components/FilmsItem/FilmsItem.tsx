@@ -1,12 +1,13 @@
 import React from "react";
 import {IFilm} from "../../types/types";
+import {Link} from "react-router-dom";
 
 interface props {
     data: IFilm
 }
 
 const FilmsItem = ({data}: props) => {
-    const {poster, name, year, description} = data;
+    const {id, type, poster, name, year, description} = data;
 
     return (
             <div className="row">
@@ -15,7 +16,7 @@ const FilmsItem = ({data}: props) => {
                 </div>
                 <div className="col-md-10">
                     <div className="card-body">
-                        <h5 className="card-title">{name} <span>{year}</span></h5>
+                        <h5 className="card-title"><Link to={`/${type}/${id}`} >{name} <span>{year}</span></Link></h5>
                         { description && <p className="card-text">{description}</p>}
                     </div>
                 </div>

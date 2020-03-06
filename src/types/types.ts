@@ -8,6 +8,7 @@ export interface IFilm {
     year: string
     poster: string
     description: string
+    type: string
 }
 
 interface IFilmsActionFetch {

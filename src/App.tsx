@@ -25,8 +25,8 @@ function App() {
                                         <div className={`col-md-9 ${mainStyles.filmsList}`}><Films/></div>
                                     </>
                                 }/>
-                                <Route path='/:id' exact render={(props) =>
-                                    <FilmPage id={props.match.params.id}/>
+                                <Route path='/:type/:id' exact render={(props) =>
+                                    <FilmPage id={props.match.params.id} type={props.match.params.type}/>
                                 }/>
                             </Switch>
                         </div>
