@@ -1,39 +1,37 @@
-import React, {useEffect, useState, useCallback} from "react";
+import React, {useEffect, useState} from "react";
 import FilmsList from "../FilmsList/FilmsList";
 import Spinner from "../Spinner/Spinner";
 import Alert from "../Alert/Alert";
 import {IFilm} from "../../types/types";
 import {useDispatch, useSelector} from "react-redux";
-import {AppDispatch, RootState} from "../../store/store";
+import {ReduxDispatch, RootState} from "../../store/store";
 import {getFilms} from "../../store/selectors";
 import fetchFilms from "../../store/actions/fetchFilms";
+import filmsStyles from './Films.module.scss'
 
 export default function () {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const [films, setFilms] = useState<IFilm[]>([]);
 
-    const state = useSelector((state: RootState)=>({
-        films: getFilms(state)
-    }))
+    const filmsFromState = useSelector((state: RootState) => getFilms(state))
 
-    const dispatch: AppDispatch = useDispatch();
+    const dispatch = useDispatch<ReduxDispatch>();
 
-    console.log(state)
+    const currentYear = new Date().getFullYear();
 
     useEffect(() => {
-        console.log('fetching');
-        setLoading(false);
+        dispatch(fetchFilms('movie', currentYear)).then(_ => setLoading(false))
     }, [])
 
     useEffect(() => {
-        setFilms(state.films);
-    }, [state.films])
+        setFilms(filmsFromState);
+    }, [filmsFromState])
 
     return (
         <div className="films">
             <div className="films__inner">
-                <h1 className='films__title'>Топ-10 низкорейтинговых фильмов</h1>
+                <h1 className={filmsStyles.title}>Топ-10 низкорейтинговых фильмов</h1>
             </div>
             {loading && <Spinner/>}
             {error && <Alert type={'danger'}>{error}</Alert>}

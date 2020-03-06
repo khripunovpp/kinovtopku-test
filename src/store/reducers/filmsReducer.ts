@@ -1,21 +1,13 @@
 import {IFilm, IFilmState, TFilmsActions} from "../../types/types";
 import {FETCH_ERROR, FETCH_SUCCESS} from "../actions/constants";
 
-const films: IFilm[] = [
-    {
-        id: 5,
-        name: 'Name',
-        description: 'Description',
-        year: 2020,
-        poster: 'd'
-    }
-]
+const films: IFilm[] = []
 
 const initialState: IFilmState = {
     loading: true,
     films: films,
     errors: '',
-    updatedAt: new Date
+    updatedAt: new Date()
 }
 
 const filmsReducer = (state = initialState, action: TFilmsActions) => {
@@ -24,13 +16,15 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
             return {
                 ...state,
                 loading: false,
-                films: [...action.payload]
+                films: [...action.payload],
+                updatedAt: new Date()
             };
         case FETCH_ERROR:
             return {
                 ...state,
                 loading: false,
-                errors: action.payload
+                errors: action.payload,
+                updatedAt: new Date()
             };
             ;
         default:

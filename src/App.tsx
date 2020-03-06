@@ -21,8 +21,8 @@ function App() {
                             <Switch>
                                 <Route path='/' exact render={() =>
                                     <>
-                                        <div className={`col-md-2 ${mainStyles.searchPanel}`}><SearchPanel/></div>
-                                        <div className={`col-md-10 ${mainStyles.filmsList}`}><Films/></div>
+                                        <div className={`col-md-3 ${mainStyles.searchPanel}`}><SearchPanel/></div>
+                                        <div className={`col-md-9 ${mainStyles.filmsList}`}><Films/></div>
                                     </>
                                 }/>
                                 <Route path='/:id' exact render={(props) =>

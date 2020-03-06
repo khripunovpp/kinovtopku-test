@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Alert/Alert.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/Spinner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/selectors.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/API.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Films/Films.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/configs/movieDbConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmsItem/FilmsItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/actions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/FilmsItem" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,11 +59,11 @@
       <recent name="E:\_work\kinovtopku\src\components\SearchPanel" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\_work\kinovtopku\src\components\FilmsItem" />
+      <recent name="E:\_work\kinovtopku\src\components\Films" />
+      <recent name="E:\_work\kinovtopku\src\store\reducers" />
       <recent name="E:\_work\kinovtopku\src\store\actions\" />
       <recent name="E:\_work\kinovtopku\src\components\Alert" />
-      <recent name="E:\_work\kinovtopku\src\components\Spinner" />
-      <recent name="E:\_work\kinovtopku\src\components\FilmsPage" />
-      <recent name="E:\_work\kinovtopku\src\components\FilmsItem" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583422235524</updated>
-      <workItem from="1583422241682" duration="18193000" />
+      <workItem from="1583422241682" duration="27026000" />
     </task>
     <servers />
   </component>
@@ -108,10 +106,10 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="306" y="42" key="#File_Watchers/62.0.1304.768@62.0.1304.768" timestamp="1583430487964" />
-    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583443603722">
+    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583489876930">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1304.768@62.0.1304.768" timestamp="1583443603722" />
+    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1304.768@62.0.1304.768" timestamp="1583489876930" />
     <state x="493" y="89" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1583430327747">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -144,6 +142,10 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="215" y="26" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1583427280365" />
+    <state x="370" y="172" key="run.anything.popup" timestamp="1583493523332">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="370" y="172" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1583493523332" />
     <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583443460883">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
