@@ -1,7 +1,7 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
-import {FETCHING, FETCH_SUCCESS, FETCH_ERROR} from "./constants";
-import {IFilm, TFilmsActions} from "../../types/types";
-import FILMSAPI from "./../../API";
+import {FETCHING, FETCH_SUCCESS, FETCH_ERROR} from "../constants";
+import {IFilm, TFilmsActions} from "../../../types/types";
+import FILMSAPI from "../../../API";
 
 const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[] | void>, {}, {}, TFilmsActions> => {
     return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[] | void> => {

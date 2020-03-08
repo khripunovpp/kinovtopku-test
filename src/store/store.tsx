@@ -1,9 +1,11 @@
 import {createStore, applyMiddleware, combineReducers, AnyAction} from "redux";
 import thunk, {ThunkDispatch} from "redux-thunk";
-import {filmsReducer} from './reducers/filmsReducer';
+import filmsReducer from './reducers/filmsReducer';
+import searchReducer from './reducers/searchReducer';
 
 const reducers = combineReducers({
-    filmsState: filmsReducer
+    filmsState: filmsReducer,
+    searchState: searchReducer
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));

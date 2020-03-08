@@ -1,29 +1,37 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import searchStyles from './SearchPanel.module.scss';
-import {useDispatch} from "react-redux";
-import {ReduxDispatch} from "../../store/store";
-import fetchFilms from "../../store/actions/fetchFilms";
+import {useDispatch, useSelector} from "react-redux";
+import {ReduxDispatch, RootState} from "../../store/store";
+import fetchFilms from "../../store/actions/thunks/fetchFilms";
+import {setSearchingType, setSearchingYear} from "../../store/actions/creators/searchPanel";
+import {getSearchingType, getSearchingYear} from "../../store/selectors";
 
 export default function () {
     const currentYear = new Date().getFullYear();
-    const [year, setYear] = useState<number>(currentYear);
-    const [type, setType] = useState<string>('movie');
 
-    const dispatch = useDispatch<ReduxDispatch>();
+    const year = useSelector((state: RootState) => getSearchingYear(state))
+    const type = useSelector((state: RootState) => getSearchingType(state))
+
+    const dispatch = useDispatch<ReduxDispatch>()
 
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        dispatch(fetchFilms(type, year));
+        e.preventDefault()
+
+        dispatch(fetchFilms(type, year))
     }
 
     const handleYear = (e: React.ChangeEvent<HTMLInputElement>) => {
-        e.preventDefault();
-        setYear(Number(e.target.value))
+        e.preventDefault()
+
+        const year = Number(e.target.value);
+        dispatch(setSearchingYear(year))
     }
 
     const handleType = (e: React.ChangeEvent<HTMLInputElement>) => {
-        e.preventDefault();
-        setType(e.target.value);
+        e.preventDefault()
+
+        const type = e.target.value
+        dispatch(setSearchingType(type))
     }
 
     return (
@@ -45,7 +53,8 @@ export default function () {
                     </div>
                     <div className="form-group">
                         <label htmlFor="year">Снятые в </label>
-                        <input type="tel" name="year" className="form-control" id="year" value={year} onChange={handleYear}/>
+                        <input type="tel" name="year" className="form-control" id="year" value={year}
+                               onChange={handleYear}/>
                     </div>
                     <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Показать</button>
                 </form>

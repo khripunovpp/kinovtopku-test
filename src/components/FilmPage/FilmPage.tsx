@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {useDispatch, useSelector} from "react-redux"
 import {ReduxDispatch, RootState} from "../../store/store"
-import fetchMovie from "../../store/actions/fetchMovie"
+import fetchMovie from "../../store/actions/thunks/fetchMovie"
 import Spinner from "../Spinner/Spinner"
 import {IFilm} from "../../types/types"
 import {RouteComponentProps} from "react-router-dom"

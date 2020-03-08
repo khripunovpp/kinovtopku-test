@@ -5,8 +5,8 @@ import Alert from "../Alert/Alert";
 import {IFilm} from "../../types/types";
 import {useDispatch, useSelector} from "react-redux";
 import {ReduxDispatch, RootState} from "../../store/store";
-import {getError, getFetchingStatus, getFilms} from "../../store/selectors";
-import fetchFilms from "../../store/actions/fetchFilms";
+import {getError, getFetchingStatus, getFilms, getSearchingType, getSearchingYear} from "../../store/selectors";
+import fetchFilms from "../../store/actions/thunks/fetchFilms";
 import filmsStyles from './Films.module.scss'
 
 export default function () {
@@ -17,17 +17,17 @@ export default function () {
     const filmsFromState = useSelector((state: RootState) => getFilms(state))
     const isFetching = useSelector((state: RootState) => getFetchingStatus(state))
     const errorFromState = useSelector((state: RootState) => getError(state))
+    const year = useSelector((state: RootState) => getSearchingYear(state))
+    const type = useSelector((state: RootState) => getSearchingType(state))
 
     const dispatch = useDispatch<ReduxDispatch>();
-
-    const currentYear = new Date().getFullYear();
 
     useEffect(() => {
         setLoading(isFetching)
     }, [isFetching])
 
     useEffect(() => {
-        dispatch(fetchFilms('movie', currentYear)).then(_ => setLoading(false))
+        dispatch(fetchFilms(type, year)).then(_ => setLoading(false))
     }, [])
 
     useEffect(() => {

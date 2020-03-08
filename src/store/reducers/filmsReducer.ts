@@ -39,6 +39,4 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
     }
 }
 
-export {
-    filmsReducer
-}
+export default filmsReducer
