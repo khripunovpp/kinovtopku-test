@@ -18,7 +18,7 @@ function Main() {
                         <Route path='/' exact render={() =>
                             <>
                                 <div className={`col-md-3 ${mainStyles.searchPanel}`}><SearchPanel/></div>
-                                <div className={`col-md-9 ${mainStyles.filmsList}`}><Films/></div>
+                                <div className={`col-md-9 ${mainStyles.films}`}><Films/></div>
                             </>
                         }/>
                         <Route path='/:type/:id' exact render={(props) =>

@@ -42,10 +42,10 @@ export default function () {
         <div className="films">
             <div className="films__inner">
                 <h1 className={filmsStyles.title}>Топ-10 низкорейтинговых фильмов</h1>
+                {loading && <Spinner/>}
+                {error && <Alert type={'danger'}>{error}</Alert>}
+                {films.length > 0 ? <FilmsList films={films}/> : <Alert>Фильмов не найдено</Alert>}
             </div>
-            {loading && <Spinner/>}
-            {error && <Alert type={'danger'}>{error}</Alert>}
-            {films.length > 0 ? <FilmsList films={films}/> : <Alert>Фильмов не найдено</Alert>}
         </div>
     )
 }

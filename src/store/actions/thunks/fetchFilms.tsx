@@ -7,7 +7,7 @@ const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[] | v
     return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[] | void> => {
         dispatch(setFetchingStatus())
 
-        return await FILMSAPI.getFilms(`discover/${type}`, {
+        return await FILMSAPI.getFilms(type, {
             [type === 'tv' ? 'first_air_date_year' : 'year']: year
         }).then((response: any) => {
             if (response.status === 200) {

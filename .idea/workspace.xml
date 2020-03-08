@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/creators/filmsActions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/creators/searchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/creators/searchPanelActions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" afterDir="false" />
     </list>
     <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
@@ -95,7 +97,7 @@
       <updated>1583422235524</updated>
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
-      <workItem from="1583679485580" duration="7900000" />
+      <workItem from="1583679485580" duration="8372000" />
     </task>
     <servers />
   </component>
