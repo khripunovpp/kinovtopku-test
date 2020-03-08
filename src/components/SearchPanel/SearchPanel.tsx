@@ -6,7 +6,7 @@ import fetchFilms from "../../store/actions/thunks/fetchFilms";
 import {setSearchingType, setSearchingYear} from "../../store/actions/creators/searchPanelActions";
 import {getSearchingType, getSearchingYear} from "../../store/selectors";
 
-export default function () {
+const SearchPanel: React.FC = () => {
     const year = useSelector((state: RootState) => getSearchingYear(state))
     const type = useSelector((state: RootState) => getSearchingType(state))
 
@@ -60,3 +60,5 @@ export default function () {
         </div>
     )
 }
+
+export default SearchPanel

@@ -1,6 +1,5 @@
 import {FETCH_ERROR, FETCH_SUCCESS, FETCHING, SET_SEARCHING_TYPE, SET_SEARCHING_YEAR} from "../store/actions/constants";
 import {Simulate} from "react-dom/test-utils";
-import load = Simulate.load;
 
 export interface IFilm {
     id: number
