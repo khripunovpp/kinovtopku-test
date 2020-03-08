@@ -1,26 +1,32 @@
-import React, {useEffect, useState} from "react";
-import {useDispatch} from "react-redux";
-import {ReduxDispatch} from "../../store/store";
-import fetchMovie from "../../store/actions/fetchMovie";
-import Spinner from "../Spinner/Spinner";
-import {IFilm} from "../../types/types";
+import React, {useEffect, useState} from "react"
+import {useDispatch} from "react-redux"
+import {ReduxDispatch} from "../../store/store"
+import fetchMovie from "../../store/actions/fetchMovie"
+import Spinner from "../Spinner/Spinner"
+import {IFilm} from "../../types/types"
+import {RouteComponentProps} from "react-router-dom"
+import FilmDescription from "../FilmDescription/FilmDescription";
 
-interface props {
+interface IProps {
     id: string
     type: string
 }
 
-const FilmPage = ({id, type}: props) => {
+type RoutePropsType = RouteComponentProps<IProps>
 
-    const [loading, setLoading] = useState(true);
-    const [film, setFilm] = useState<IFilm | null>(null);
+const FilmPage: React.FC<RoutePropsType> = (props) => {
 
-    const dispatch = useDispatch<ReduxDispatch>();
+    const {id, type} = props.match.params
+
+    const [loading, setLoading] = useState(true)
+    const [film, setFilm] = useState<IFilm | null>(null)
+
+    const dispatch = useDispatch<ReduxDispatch>()
 
     useEffect(() => {
         dispatch(fetchMovie(Number(id), type)).then(film => {
-            setFilm(film);
-            setLoading(false);
+            setFilm(film)
+            setLoading(false)
         })
     }, [])
 
@@ -28,11 +34,7 @@ const FilmPage = ({id, type}: props) => {
         <div className="filmPage">
             <div className="container">
                 {loading && <Spinner/>}
-                {film && <>
-                    <h1 className="filmPage__title">{film.name} <span>{film.year}</span></h1>
-                    <img src={film.poster} alt={film.name}/>
-                    {film.description && <p>{film.description}</p>}
-                </>}
+                {film && <FilmDescription data={film}/>}
             </div>
         </div>
     )

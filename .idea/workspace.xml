@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" afterDir="false" />
+    <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
+    </list>
+    <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="">
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,30 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="3" end1="5" start2="3" end2="7" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="6" end1="10" start2="8" end2="8" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="23" end1="23" start2="21" end2="22" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="38" end1="39" start2="37" end2="38" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="48" end1="48" start2="47" end2="52" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="49" end1="49" start2="53" end2="55" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="52" end1="58" start2="58" end2="58" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="81" end1="81" start2="81" end2="82" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="86" end1="87" start2="87" end2="89" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="98" end1="99" start2="100" end2="103" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
+        <range start1="112" end1="113" start2="116" end2="117" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="115" end1="116" start2="119" end2="120" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="124" end1="124" start2="128" end2="132" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="148" end1="149" start2="156" end2="157" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="151" end1="152" start2="159" end2="164" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="156" end1="157" start2="168" end2="169" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+        <range start1="159" end1="160" start2="171" end2="172" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1YiP2fDao4nbKcG5WPrL6twEB9M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -36,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/actions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/FilmDescription" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,16 +74,17 @@
     <property name="ts.external.directory.path" value="E:\_work\kinovtopku\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\_work\kinovtopku\src\components\Main" />
+      <recent name="E:\_work\kinovtopku\src" />
+      <recent name="E:\_work\kinovtopku\src\components\SearchPanel" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\_work\kinovtopku\src\components\FilmDescription" />
+      <recent name="E:\_work\kinovtopku\src\components\Main" />
       <recent name="E:\_work\kinovtopku\src\store\actions" />
       <recent name="E:\_work\kinovtopku\src\components\FilmsItem" />
       <recent name="E:\_work\kinovtopku\src\components\Films" />
-      <recent name="E:\_work\kinovtopku\src\store\reducers" />
-      <recent name="E:\_work\kinovtopku\src\store\actions\" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\_work\kinovtopku\src" />
-      <recent name="E:\_work\kinovtopku\src\components\SearchPanel" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -79,12 +108,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="" />
+      <changelist id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
       <created>1583422235524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583422235524</updated>
       <workItem from="1583422241682" duration="28504000" />
-      <workItem from="1583507909741" duration="3289000" />
+      <workItem from="1583507909741" duration="4069000" />
+      <workItem from="1583679485580" duration="2823000" />
     </task>
     <servers />
   </component>
@@ -96,7 +127,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -110,10 +143,10 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="306" y="42" key="#File_Watchers/62.0.1304.768@62.0.1304.768" timestamp="1583430487964" />
-    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583489876930">
+    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583682152892">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1304.768@62.0.1304.768" timestamp="1583489876930" />
+    <state x="480" y="187" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1304.768@62.0.1304.768" timestamp="1583682152892" />
     <state x="493" y="89" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1583430327747">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -122,6 +155,10 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="444" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1304.768@62.0.1304.768" timestamp="1583424103899" />
+    <state x="291" y="0" key="CommitChangelistDialog2" timestamp="1583681727731">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="291" y="0" key="CommitChangelistDialog2/62.0.1304.768@62.0.1304.768" timestamp="1583681727731" />
     <state x="348" y="162" key="EditFileWatcherDialog" timestamp="1583430329526">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -146,17 +183,21 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="215" y="26" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1583427280365" />
-    <state x="410" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1583507908444">
+    <state x="561" y="300" key="VCS.ChangelistChooser" timestamp="1583682315883">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="410" y="208" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1583507908444" />
+    <state x="561" y="300" key="VCS.ChangelistChooser/62.0.1304.768@62.0.1304.768" timestamp="1583682315883" />
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1583679489570">
+      <screen x="62" y="0" width="1304" height="768" />
+    </state>
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1583679489570" />
     <state x="370" y="172" key="run.anything.popup" timestamp="1583508546878">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="370" y="172" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1583508546878" />
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583443460883">
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583682133040">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1583443460883" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1583682133040" />
   </component>
 </project>
