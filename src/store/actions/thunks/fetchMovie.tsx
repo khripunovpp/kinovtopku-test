@@ -2,7 +2,7 @@ import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 import {IFilm, TFilmsActions, TLocalStorage} from "../../../types/types";
 import FILMSAPI from "../../../configs/API";
 import {setFetchingStatus} from "../creators/filmsActions";
-import {fetchFilmsExpire} from "../../../configs/globalConstants";
+import {FETCH_FILMS_EXPIRE} from "../../../configs/globalConstants";
 import {prepareFilmData} from "../../../utils/filmsUtils";
 
 const fetchMovie = (id: number, type: string): ThunkAction<Promise<any>, {}, {}, TFilmsActions> => {
@@ -23,7 +23,7 @@ const fetchMovie = (id: number, type: string): ThunkAction<Promise<any>, {}, {},
 
             // проверяем, если прошло меньше времени чем указано в fetchFilmsExpire и фильм найен в localStorage,
             // то берем его оттудаб иначе делаем новый запрос и обновляем данные
-            if (Date.now() - localStorageFilmsData.updatedAt < fetchFilmsExpire
+            if (Date.now() - localStorageFilmsData.updatedAt < FETCH_FILMS_EXPIRE
                 && resultsInLocalStorage.length > 0) {
                 isCashed = true
                 return Promise.resolve(resultsInLocalStorage[0])

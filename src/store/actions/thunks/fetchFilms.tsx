@@ -2,7 +2,7 @@ import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 import {IFilm, TFilmsActions, TLocalStorage} from "../../../types/types";
 import FILMSAPI from "../../../configs/API";
 import {fetchError, fetchSuccess, setFetchingStatus} from "../creators/filmsActions";
-import {fetchFilmsExpire} from "../../../configs/globalConstants";
+import {FETCH_FILMS_EXPIRE} from "../../../configs/globalConstants";
 import {prepareFilmData} from "../../../utils/filmsUtils";
 
 const fetchFilms = (type: string, year: number): ThunkAction<void, {}, {}, TFilmsActions> => {
@@ -19,7 +19,7 @@ const fetchFilms = (type: string, year: number): ThunkAction<void, {}, {}, TFilm
             // проверяем, если прошло меньше времени чем указано в fetchFilmsExpire и параметры поиска
             // совпадают с предыдущими, тогда берем данные из localStorage
             // иначе делаем новый запрос и обновляем данные
-            if (Date.now() - localStorageFilms.updatedAt < fetchFilmsExpire
+            if (Date.now() - localStorageFilms.updatedAt < FETCH_FILMS_EXPIRE
                     && type === localStorageFilms.searchParams.type
                     && year === localStorageFilms.searchParams.year) {
                 isCashed = true

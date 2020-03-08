@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
-      <change afterPath="$PROJECT_DIR$/src/utils/filmsUtils.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/API.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/movieDbConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/movieDbConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/globalConstants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/globalConstants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchMovie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/filmsUtils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/filmsUtils.tsx" afterDir="false" />
     </list>
     <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +96,7 @@
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
       <workItem from="1583679485580" duration="14405000" />
-      <workItem from="1583697083282" duration="4675000" />
+      <workItem from="1583697083282" duration="5102000" />
     </task>
     <servers />
   </component>
