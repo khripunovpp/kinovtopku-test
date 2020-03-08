@@ -15,15 +15,18 @@ const fetchFilms = (type: string, year: number): ThunkAction<void, {}, {}, TFilm
         if (localStorageString) {
             const localStorageFilms: TLocalStorage = await JSON.parse(localStorage.getItem('films') || '')
 
-            // проверяем, если прошло больше времени чем указано в fetchFilmsExpire, тогда делаем новый запрос и обновляем данные
-            // иначе берем данные из localStorage
-            if (Date.now() - localStorageFilms.updatedAt < fetchFilmsExpire) {
+            // проверяем, если прошло меньше времени чем указано в fetchFilmsExpire и параметры поиска
+            // совпадают с предыдущими, тогда берем данные из localStorage
+            // иначе делаем новый запрос и обновляем данные
+            if (Date.now() - localStorageFilms.updatedAt < fetchFilmsExpire
+                    && type == localStorageFilms.searchParams.type
+                    && year == localStorageFilms.searchParams.year) {
                 isCashed = true
                 dispatch(fetchSuccess(localStorageFilms.data))
             }
         }
 
-        if(!isCashed) request(dispatch, type, year)
+        if (!isCashed) request(dispatch, type, year)
     }
 }
 
@@ -52,6 +55,7 @@ const request = async (dispatch: Function, type: string, year: number) => {
 
         // сохраням данные в localStorage с метой времени
         const storageFilms: TLocalStorage = {
+            searchParams: {year, type},
             data: results,
             updatedAt: Date.now()
         }

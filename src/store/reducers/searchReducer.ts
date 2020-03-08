@@ -1,7 +1,7 @@
-import {ISearchingState, TSearchingActions} from "../../types/types";
+import {TSearchingState, TSearchingActions} from "../../types/types";
 import {SET_SEARCHING_TYPE, SET_SEARCHING_YEAR} from "../actions/constants";
 
-const initialState: ISearchingState = {
+const initialState: TSearchingState = {
     year: new Date().getFullYear(),
     type: 'movie'
 }

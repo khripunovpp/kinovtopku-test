@@ -45,12 +45,15 @@ export type TSetSearchingTypeActionType = {
 
 export type TSearchingActions = TSetSearchingTypeActionType | TSetSearchingYearActionType
 
-export interface ISearchingState {
+export type TSearchParams = {
     year: number
     type: string
 }
 
+export type TSearchingState = TSearchParams
+
 export type TLocalStorage = {
+    searchParams: TSearchParams
     data: any
     updatedAt: number
 }
