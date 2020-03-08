@@ -1,6 +1,6 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 import {IFilm, TFilmsActions} from "../../../types/types";
-import FILMSAPI from "../../../API";
+import FILMSAPI from "../../../configs/API";
 import {FETCHING} from "../constants";
 
 const fetchMovie = (id: number, type: string): ThunkAction<Promise<IFilm>, {}, {}, TFilmsActions> => {

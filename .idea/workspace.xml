@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmsList/FilmsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/configs/movieDbConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/movieDbConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globalConstants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/globalConstants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/creators/filmsActions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/creators/filmsActions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/searchReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/searchReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchMovie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/selectors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
@@ -51,19 +59,19 @@
     <property name="ts.external.directory.path" value="E:\_work\kinovtopku\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\_work\kinovtopku\src\store\actions\creators" />
-      <recent name="E:\_work\kinovtopku\src\store\actions" />
-      <recent name="E:\_work\kinovtopku\src\store\actions\thunks" />
-      <recent name="E:\_work\kinovtopku\src\components\Main" />
-      <recent name="E:\_work\kinovtopku\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\_work\kinovtopku\src\store\actions\creators" />
       <recent name="E:\_work\kinovtopku\src\store\reducers" />
       <recent name="E:\_work\kinovtopku\src\components\FilmDescription" />
       <recent name="E:\_work\kinovtopku\src\components\Main" />
       <recent name="E:\_work\kinovtopku\src\store\actions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\_work\kinovtopku\src\configs" />
+      <recent name="E:\_work\kinovtopku\src" />
+      <recent name="E:\_work\kinovtopku\src\store\actions\creators" />
+      <recent name="E:\_work\kinovtopku\src\store\actions" />
+      <recent name="E:\_work\kinovtopku\src\store\actions\thunks" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -95,6 +103,7 @@
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
       <workItem from="1583679485580" duration="14405000" />
+      <workItem from="1583697083282" duration="1863000" />
     </task>
     <servers />
   </component>
@@ -147,22 +156,22 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="549" y="285" key="GitRewordDialog/62.0.1304.768@62.0.1304.768" timestamp="1583689806426" />
-    <state width="1261" height="192" key="GridCell.Tab.0.bottom" timestamp="1583427842964">
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom" timestamp="1583697180957">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="192" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1583427842964" />
-    <state width="1261" height="192" key="GridCell.Tab.0.center" timestamp="1583427842964">
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1583697180957" />
+    <state width="1261" height="192" key="GridCell.Tab.0.center" timestamp="1583697180957">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="192" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1583427842964" />
-    <state width="1261" height="192" key="GridCell.Tab.0.left" timestamp="1583427842964">
+    <state width="1261" height="192" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1583697180957" />
+    <state width="1261" height="192" key="GridCell.Tab.0.left" timestamp="1583697180956">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="192" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1583427842964" />
-    <state width="1261" height="192" key="GridCell.Tab.0.right" timestamp="1583427842964">
+    <state width="1261" height="192" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1583697180956" />
+    <state width="1261" height="192" key="GridCell.Tab.0.right" timestamp="1583697180957">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="192" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1583427842964" />
+    <state width="1261" height="192" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1583697180957" />
     <state x="215" y="26" key="SettingsEditor" timestamp="1583427280365">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
@@ -171,17 +180,17 @@
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="561" y="300" key="VCS.ChangelistChooser/62.0.1304.768@62.0.1304.768" timestamp="1583682315883" />
-    <state x="410" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1583679489570">
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1583697081945">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="410" y="208" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1583679489570" />
-    <state x="370" y="172" key="run.anything.popup" timestamp="1583508546878">
+    <state x="410" y="208" key="com.intellij.ide.util.TipDialog/62.0.1304.768@62.0.1304.768" timestamp="1583697081945" />
+    <state x="370" y="172" key="run.anything.popup" timestamp="1583698959834">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="370" y="172" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1583508546878" />
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583690341751">
+    <state x="370" y="172" key="run.anything.popup/62.0.1304.768@62.0.1304.768" timestamp="1583698959834" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1583698491931">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
-    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1583690341751" />
+    <state x="377" y="89" width="672" height="678" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1583698491931" />
   </component>
 </project>

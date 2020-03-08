@@ -17,7 +17,10 @@ type TFilmsActionFetch = {
 
 type TFilmsActionFetchSuccess = {
     type: typeof FETCH_SUCCESS
-    payload: IFilm[]
+    payload: {
+        films: IFilm[]
+        date: number
+    }
 }
 
 type TFilmsActionFetchError = {
@@ -31,7 +34,7 @@ export interface IFilmState {
     loading: boolean
     films: IFilm[]
     errors: string
-    updatedAt: Date
+    updatedAt: number
 }
 
 export type TSetSearchingYearActionType = {

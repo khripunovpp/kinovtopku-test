@@ -7,7 +7,7 @@ const initialState: IFilmState = {
     loading: true,
     films: films,
     errors: '',
-    updatedAt: new Date()
+    updatedAt: Date.now()
 }
 
 const filmsReducer = (state = initialState, action: TFilmsActions) => {
@@ -16,14 +16,14 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
             return {
                 ...state,
                 loading: true,
-                updatedAt: new Date()
+                updatedAt: Date.now()
             };
         case FETCH_SUCCESS:
             return {
                 ...state,
                 loading: false,
-                films: [...action.payload],
-                updatedAt: new Date()
+                films: [...action.payload.films],
+                updatedAt: action.payload.date
             };
         case FETCH_ERROR:
             console.log(action.payload)
@@ -31,7 +31,7 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
                 ...state,
                 loading: false,
                 errors: action.payload,
-                updatedAt: new Date()
+                updatedAt: Date.now()
             };
             ;
         default:

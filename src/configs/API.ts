@@ -1,5 +1,5 @@
 import axios from "axios";
-import {KEY} from "./components/configs/movieDbConfig";
+import {KEY} from "./movieDbConfig";
 
 const FILMSAPI = {
     getFilms(type: string, params: any) {

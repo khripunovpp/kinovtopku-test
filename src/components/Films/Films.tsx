@@ -5,7 +5,14 @@ import Alert from "../Alert/Alert";
 import {IFilm} from "../../types/types";
 import {useDispatch, useSelector} from "react-redux";
 import {ReduxDispatch, RootState} from "../../store/store";
-import {getError, getFetchingStatus, getFilms, getSearchingType, getSearchingYear} from "../../store/selectors";
+import {
+    getError,
+    getFetchingStatus,
+    getFilms,
+    getSearchingType,
+    getSearchingYear,
+    getUpdatedDate
+} from "../../store/selectors";
 import fetchFilms from "../../store/actions/thunks/fetchFilms";
 import filmsStyles from './Films.module.scss'
 
@@ -19,6 +26,7 @@ export default function () {
     const errorFromState = useSelector((state: RootState) => getError(state))
     const year = useSelector((state: RootState) => getSearchingYear(state))
     const type = useSelector((state: RootState) => getSearchingType(state))
+    const updatedAt = useSelector((state: RootState) => getUpdatedDate(state))
 
     const dispatch = useDispatch<ReduxDispatch>();
 
@@ -44,7 +52,7 @@ export default function () {
                 <h1 className={filmsStyles.title}>Топ-10 низкорейтинговых фильмов</h1>
                 {loading && <Spinner/>}
                 {error && <Alert type={'danger'}>{error}</Alert>}
-                {films.length > 0 ? <FilmsList films={films}/> : <Alert>Фильмов не найдено</Alert>}
+                {films.length > 0 ? <FilmsList films={films} updatedAt={updatedAt}/> : <Alert>Фильмов не найдено</Alert>}
             </div>
         </div>
     )

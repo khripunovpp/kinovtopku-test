@@ -1,8 +1,8 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 import {IFilm, TFilmsActions, TLocalStorage} from "../../../types/types";
-import FILMSAPI from "../../../API";
+import FILMSAPI from "../../../configs/API";
 import {fetchError, fetchSuccess, setFetchingStatus} from "../creators/filmsActions";
-import {fetchFilmsExpire} from "../../../globalConstants";
+import {fetchFilmsExpire} from "../../../configs/globalConstants";
 
 const fetchFilms = (type: string, year: number): ThunkAction<void, {}, {}, TFilmsActions> => {
     return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>) => {
@@ -19,10 +19,10 @@ const fetchFilms = (type: string, year: number): ThunkAction<void, {}, {}, TFilm
             // совпадают с предыдущими, тогда берем данные из localStorage
             // иначе делаем новый запрос и обновляем данные
             if (Date.now() - localStorageFilms.updatedAt < fetchFilmsExpire
-                    && type == localStorageFilms.searchParams.type
-                    && year == localStorageFilms.searchParams.year) {
+                    && type === localStorageFilms.searchParams.type
+                    && year === localStorageFilms.searchParams.year) {
                 isCashed = true
-                dispatch(fetchSuccess(localStorageFilms.data))
+                dispatch(fetchSuccess(localStorageFilms.data, localStorageFilms.updatedAt))
             }
         }
 
