@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
-import {useDispatch, useSelector} from "react-redux"
-import {ReduxDispatch, RootState} from "../../store/store"
+import {useDispatch} from "react-redux"
+import {ReduxDispatch} from "../../store/store"
 import fetchMovie from "../../store/actions/thunks/fetchMovie"
 import Spinner from "../Spinner/Spinner"
 import {IFilm} from "../../types/types"

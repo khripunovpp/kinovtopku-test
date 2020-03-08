@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import searchStyles from './SearchPanel.module.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {ReduxDispatch, RootState} from "../../store/store";
@@ -7,8 +7,6 @@ import {setSearchingType, setSearchingYear} from "../../store/actions/creators/s
 import {getSearchingType, getSearchingYear} from "../../store/selectors";
 
 export default function () {
-    const currentYear = new Date().getFullYear();
-
     const year = useSelector((state: RootState) => getSearchingYear(state))
     const type = useSelector((state: RootState) => getSearchingType(state))
 

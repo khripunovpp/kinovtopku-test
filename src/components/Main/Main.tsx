@@ -2,7 +2,6 @@ import React from 'react';
 import SearchPanel from "../SearchPanel/SearchPanel";
 import mainStyles from './Main.module.scss';
 import {
-    BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";

@@ -1,4 +1,3 @@
-import React from "react";
 import {SET_SEARCHING_TYPE, SET_SEARCHING_YEAR} from "../constants";
 import {TSetSearchingTypeActionType, TSetSearchingYearActionType} from "../../../types/types";
 

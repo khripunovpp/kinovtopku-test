@@ -1,4 +1,3 @@
-import React from "react";
 import {FETCH_ERROR, FETCH_SUCCESS, FETCHING} from "../constants";
 import {IFilm, TFilmsActions} from "../../../types/types";
 

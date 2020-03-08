@@ -1,6 +1,5 @@
 import {ISearchingState, TSearchingActions} from "../../types/types";
-import {FETCH_ERROR, FETCH_SUCCESS, FETCHING, SET_SEARCHING_TYPE, SET_SEARCHING_YEAR} from "../actions/constants";
-
+import {SET_SEARCHING_TYPE, SET_SEARCHING_YEAR} from "../actions/constants";
 
 const initialState: ISearchingState = {
     year: new Date().getFullYear(),

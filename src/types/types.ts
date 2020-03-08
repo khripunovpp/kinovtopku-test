@@ -49,3 +49,8 @@ export interface ISearchingState {
     year: number
     type: string
 }
+
+export type TLocalStorage = {
+    data: any
+    updatedAt: number
+}
