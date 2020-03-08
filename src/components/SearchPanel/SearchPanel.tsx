@@ -3,7 +3,7 @@ import searchStyles from './SearchPanel.module.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {ReduxDispatch, RootState} from "../../store/store";
 import fetchFilms from "../../store/actions/thunks/fetchFilms";
-import {setSearchingType, setSearchingYear} from "../../store/actions/creators/searchPanel";
+import {setSearchingType, setSearchingYear} from "../../store/actions/creators/searchPanelActions";
 import {getSearchingType, getSearchingYear} from "../../store/selectors";
 
 export default function () {

@@ -1,13 +1,12 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
-import {FETCHING, FETCH_SUCCESS, FETCH_ERROR} from "../constants";
 import {IFilm, TFilmsActions} from "../../../types/types";
 import FILMSAPI from "../../../API";
+import {fetchError, fetchSuccess, setFetchingStatus} from "../creators/filmsActions";
 
 const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[] | void>, {}, {}, TFilmsActions> => {
     return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[] | void> => {
-        dispatch({
-            type: FETCHING
-        })
+        dispatch(setFetchingStatus())
+
         return await FILMSAPI.getFilms(`discover/${type}`, {
             [type === 'tv' ? 'first_air_date_year' : 'year']: year
         }).then((response: any) => {
@@ -26,16 +25,12 @@ const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[] | v
                     poster: film['poster_path'] ? 'https://image.tmdb.org/t/p/w300_and_h450_bestv2/' + film['poster_path'] : 'https://via.placeholder.com/500x500'
                 }
             })
-            dispatch({
-                type: FETCH_SUCCESS,
-                payload: results
-            })
+
+            dispatch(fetchSuccess(results))
+
             return results;
         }).catch((error: Error) => {
-            dispatch({
-                type: FETCH_ERROR,
-                payload: error.message
-            })
+            dispatch(fetchError(error.message))
         })
     }
 }

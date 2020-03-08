@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
-      <change afterPath="$PROJECT_DIR$/src/store/actions/creators/searchPanel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/searchReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/creators/filmsActions.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPanel/SearchPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchMovie.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/selectors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/creators/searchPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/creators/searchPanelActions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/thunks/fetchFilms.tsx" afterDir="false" />
     </list>
     <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/actions/creators" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,11 +60,11 @@
       <recent name="E:\_work\kinovtopku\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\_work\kinovtopku\src\store\actions\creators" />
       <recent name="E:\_work\kinovtopku\src\store\reducers" />
       <recent name="E:\_work\kinovtopku\src\components\FilmDescription" />
       <recent name="E:\_work\kinovtopku\src\components\Main" />
       <recent name="E:\_work\kinovtopku\src\store\actions" />
-      <recent name="E:\_work\kinovtopku\src\components\FilmsItem" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -103,7 +95,7 @@
       <updated>1583422235524</updated>
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
-      <workItem from="1583679485580" duration="7401000" />
+      <workItem from="1583679485580" duration="7900000" />
     </task>
     <servers />
   </component>
