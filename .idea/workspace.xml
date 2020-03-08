@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="">
-      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/selectors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
+    <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,31 +24,13 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="7" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="6" end1="10" start2="8" end2="8" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="23" end1="23" start2="21" end2="22" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="38" end1="39" start2="37" end2="38" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="48" end1="48" start2="47" end2="52" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="49" end1="49" start2="53" end2="55" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="52" end1="58" start2="58" end2="58" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="81" end1="81" start2="81" end2="82" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="86" end1="87" start2="87" end2="89" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="98" end1="99" start2="100" end2="103" changelist="3c2f73fd-66dc-44d3-9754-aed0bb770527" />
-        <range start1="112" end1="113" start2="116" end2="117" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="115" end1="116" start2="119" end2="120" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="124" end1="124" start2="128" end2="132" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="148" end1="149" start2="156" end2="157" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="151" end1="152" start2="159" end2="164" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="156" end1="157" start2="168" end2="169" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-        <range start1="159" end1="160" start2="171" end2="172" changelist="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1YiP2fDao4nbKcG5WPrL6twEB9M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -115,7 +97,7 @@
       <updated>1583422235524</updated>
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
-      <workItem from="1583679485580" duration="2823000" />
+      <workItem from="1583679485580" duration="3924000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
 import {IFilm, IFilmState, TFilmsActions} from "../../types/types";
-import {FETCH_ERROR, FETCH_SUCCESS} from "../actions/constants";
+import {FETCH_ERROR, FETCH_SUCCESS, FETCHING} from "../actions/constants";
 
 const films: IFilm[] = []
 
@@ -12,6 +12,11 @@ const initialState: IFilmState = {
 
 const filmsReducer = (state = initialState, action: TFilmsActions) => {
     switch (action.type) {
+        case FETCHING:
+            return {
+                ...state,
+                loading: true
+            };
         case FETCH_SUCCESS:
             return {
                 ...state,

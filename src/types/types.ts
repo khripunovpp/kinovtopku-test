@@ -1,4 +1,4 @@
-import {FETCH_ERROR, FETCH_FILMS, FETCH_SUCCESS} from "../store/actions/constants";
+import {FETCH_ERROR, FETCH_SUCCESS, FETCHING} from "../store/actions/constants";
 import {Simulate} from "react-dom/test-utils";
 import load = Simulate.load;
 
@@ -12,7 +12,7 @@ export interface IFilm {
 }
 
 interface IFilmsActionFetch {
-    type: typeof FETCH_FILMS
+    type: typeof FETCHING
 }
 
 interface IFilmsActionFetchSuccess {

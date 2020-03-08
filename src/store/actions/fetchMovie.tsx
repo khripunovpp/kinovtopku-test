@@ -1,9 +1,13 @@
-import {ThunkAction} from 'redux-thunk';
+import {ThunkAction, ThunkDispatch} from 'redux-thunk';
 import {IFilm, TFilmsActions} from "../../types/types";
 import FILMSAPI from "../../API";
+import {FETCHING} from "./constants";
 
 const fetchMovie = (id: number, type: string): ThunkAction<Promise<IFilm>, {}, {}, TFilmsActions> => {
-    return async (): Promise<IFilm> => {
+    return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm> => {
+        dispatch({
+            type: FETCHING
+        })
         return await FILMSAPI.find(id, type).then<any>((response: any) => {
             if (response.status === 200) {
                 return response.data

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
-import {useDispatch} from "react-redux"
-import {ReduxDispatch} from "../../store/store"
+import {useDispatch, useSelector} from "react-redux"
+import {ReduxDispatch, RootState} from "../../store/store"
 import fetchMovie from "../../store/actions/fetchMovie"
 import Spinner from "../Spinner/Spinner"
 import {IFilm} from "../../types/types"
@@ -29,7 +29,7 @@ const FilmPage: React.FC<RoutePropsType> = (props) => {
             setLoading(false)
         })
     }, [])
-
+    
     return (
         <div className="filmPage">
             <div className="container">
