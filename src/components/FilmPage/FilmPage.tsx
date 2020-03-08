@@ -25,6 +25,7 @@ const FilmPage: React.FC<RoutePropsType> = (props) => {
 
     useEffect(() => {
         dispatch(fetchMovie(Number(id), type)).then(film => {
+            console.log(film)
             setFilm(film)
             setLoading(false)
         })
