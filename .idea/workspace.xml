@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3c2f73fd-66dc-44d3-9754-aed0bb770527" name="Default Changelist" comment="fixup! added Main component and rewrite FilmPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmPage/FilmPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Films/Films.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/Films.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchFilms.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/fetchMovie.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filmsReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/selectors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <list id="bd2ef8db-b081-43b8-a7cf-a9d52c4bd679" name="added Main component and rewrite FilmPage" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +93,7 @@
       <updated>1583422235524</updated>
       <workItem from="1583422241682" duration="28504000" />
       <workItem from="1583507909741" duration="4069000" />
-      <workItem from="1583679485580" duration="3924000" />
+      <workItem from="1583679485580" duration="4931000" />
     </task>
     <servers />
   </component>

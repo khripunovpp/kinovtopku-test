@@ -15,7 +15,8 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
         case FETCHING:
             return {
                 ...state,
-                loading: true
+                loading: true,
+                updatedAt: new Date()
             };
         case FETCH_SUCCESS:
             return {
@@ -25,6 +26,7 @@ const filmsReducer = (state = initialState, action: TFilmsActions) => {
                 updatedAt: new Date()
             };
         case FETCH_ERROR:
+            console.log(action.payload)
             return {
                 ...state,
                 loading: false,

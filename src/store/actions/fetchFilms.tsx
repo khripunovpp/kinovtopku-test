@@ -1,16 +1,16 @@
 import {ThunkAction, ThunkDispatch} from 'redux-thunk';
-import {FETCHING, FETCH_SUCCESS} from "./constants";
+import {FETCHING, FETCH_SUCCESS, FETCH_ERROR} from "./constants";
 import {IFilm, TFilmsActions} from "../../types/types";
 import FILMSAPI from "./../../API";
 
-const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[]>, {}, {}, TFilmsActions> => {
-    return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[]> => {
+const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[] | void>, {}, {}, TFilmsActions> => {
+    return async (dispatch: ThunkDispatch<{}, {}, TFilmsActions>): Promise<IFilm[] | void> => {
         dispatch({
             type: FETCHING
         })
         return await FILMSAPI.getFilms(`discover/${type}`, {
             [type === 'tv' ? 'first_air_date_year' : 'year']: year
-        }).then<any>((response: any) => {
+        }).then((response: any) => {
             if (response.status === 200) {
                 return response.data
             } else throw new Error('error')
@@ -31,6 +31,11 @@ const fetchFilms = (type: string, year: number): ThunkAction<Promise<IFilm[]>, {
                 payload: results
             })
             return results;
+        }).catch((error: Error) => {
+            dispatch({
+                type: FETCH_ERROR,
+                payload: error.message
+            })
         })
     }
 }
