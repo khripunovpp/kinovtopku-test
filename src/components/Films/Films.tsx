@@ -27,7 +27,7 @@ export default function () {
     }, [isFetching])
 
     useEffect(() => {
-        dispatch(fetchFilms(type, year)).then(_ => setLoading(false))
+        dispatch(fetchFilms(type, year))
     }, [])
 
     useEffect(() => {
